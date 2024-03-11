@@ -3,7 +3,7 @@ Simple tool to only delete old plots when, and only when, space is needed for ne
 
 Run the .exe and it will create it's own .config file on first run.
 
-The intention is that you populate a list of folders to monitor, one for each drive. Once you hit the 'GO!' button, the app will monitor the free space of those drives and delete a single .plot file in the specified location each time that the available free space drops below the value in the .ini setting 'New Plot Size (GB)'.  This setting defaults to 75 GB.
+The intention is that you populate a list of folders to monitor, one for each drive. Once you hit the 'GO!' button, the app will monitor the free space of those drives and delete a single .plot file in the specified location each time that the available free space drops below the value in the .ini setting 'New Plot Size (GB)'.  This setting defaults to 5 GB.
 
 Using a separate plotting tool (e.g. Bladebit CUDA) and it's built in load-balancing feature (at the time of writing this is configured using -d /path -d /path -d /path for BladeBit CUDA) to distribute plots to their farming locations and use ReplotSpaceMan to make space if and when it's needed.
 
