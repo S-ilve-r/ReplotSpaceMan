@@ -87,7 +87,7 @@ BOOL CReplotSpaceManApp::InitInstance()
 
 	iTest = theApp.GetProfileIntW(_T("Config"), _T("New Plot Size (GB)"), -1);
 	if (iTest == -1)
-		theApp.WriteProfileInt(_T("Config"), _T("New Plot Size (GB)"), 75);
+		theApp.WriteProfileInt(_T("Config"), _T("New Plot Size (GB)"), 99);
 
 	CReplotSpaceManDlg dlg;
 	m_pMainWnd = &dlg;

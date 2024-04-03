@@ -32,6 +32,31 @@
 #define IDC_PROGRESS9                   1030
 #define IDC_STATIC9                     1031
 #define IDC_LIST1                       1032
+#define IDC_SPATH0                      1034
+#define IDC_SPATH1                      1035
+#define IDC_SPATH2                      1036
+#define IDC_SPATH3                      1037
+#define IDC_SPATH4                      1038
+#define IDC_SPATH5                      1039
+#define IDC_SPATH6                      1040
+#define IDC_SPATH7                      1041
+#define IDC_SPATH8                      1042
+#define IDC_SPATH9                      1043
+#define IDC_PROGRESS10                  1044
+#define IDC_STATIC10                    1045
+#define IDC_PROGRESS11                  1046
+#define IDC_STATIC11                    1047
+#define IDC_PROGRESS12                  1048
+#define IDC_STATIC12                    1049
+#define IDC_PROGRESS13                  1050
+#define IDC_STATIC13                    1051
+#define IDC_PROGRESS14                  1052
+#define IDC_STATIC14                    1053
+#define IDC_SPATH10                     1054
+#define IDC_SPATH11                     1055
+#define IDC_SPATH12                     1056
+#define IDC_SPATH13                     1057
+#define IDC_SPATH14                     1058
 
 // Next default values for new objects
 // 
@@ -39,7 +64,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        134
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1033
+#define _APS_NEXT_CONTROL_VALUE         1059
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

@@ -260,10 +260,10 @@ void CReplotSpaceManDlg::SetupFolders()
 	//reset or hide as necessary
 	int iCount = cOldPlotLocationsList.GetCount();
 
-	if (iCount > 10)
+	if (iCount > 15)
 	{
 		CString csMessage;
-		csMessage.Format(_T("Replot SpaceMan only support up to 10 plots\r\nEntry '%s' and any following it will be ignored."), cOldPlotLocationsList.GetItemText(10));
+		csMessage.Format(_T("Replot SpaceMan only support up to 15 plot locations\r\nEntry '%s' and any following it will be ignored."), cOldPlotLocationsList.GetItemText(15));
 		AfxMessageBox(csMessage);
 	}
 
@@ -271,120 +271,208 @@ void CReplotSpaceManDlg::SetupFolders()
 	{
 		GetDlgItem(IDC_PROGRESS0)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC0)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH0)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS0)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC0)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH0)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 1)
 	{
 		GetDlgItem(IDC_PROGRESS1)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC1)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH1)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS1)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC1)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH1)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 2)
 	{
 		GetDlgItem(IDC_PROGRESS2)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC2)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH2)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS2)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC2)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH2)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 3)
 	{
 		GetDlgItem(IDC_PROGRESS3)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC3)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH3)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS3)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC3)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH3)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 4)
 	{
 		GetDlgItem(IDC_PROGRESS4)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC4)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH4)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS4)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC4)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH4)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 5)
 	{
 		GetDlgItem(IDC_PROGRESS5)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC5)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH5)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS5)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC5)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH5)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 6)
 	{
 		GetDlgItem(IDC_PROGRESS6)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC6)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH6)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS6)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC6)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH6)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 7)
 	{
 		GetDlgItem(IDC_PROGRESS7)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC7)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH7)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS7)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC7)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH7)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 8)
 	{
 		GetDlgItem(IDC_PROGRESS8)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC8)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH8)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS8)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC8)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH8)->ShowWindow(SW_HIDE);
 	}
 
 	if (iCount > 9)
 	{
 		GetDlgItem(IDC_PROGRESS9)->ShowWindow(SW_SHOW);
 		GetDlgItem(IDC_STATIC9)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH9)->ShowWindow(SW_SHOW);
 	}
 	else
 	{
 		GetDlgItem(IDC_PROGRESS9)->ShowWindow(SW_HIDE);
 		GetDlgItem(IDC_STATIC9)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH9)->ShowWindow(SW_HIDE);
+	}
+
+	if (iCount > 10)
+	{
+		GetDlgItem(IDC_PROGRESS10)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_STATIC10)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH10)->ShowWindow(SW_SHOW);
+	}
+	else
+	{
+		GetDlgItem(IDC_PROGRESS10)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_STATIC10)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH10)->ShowWindow(SW_HIDE);
+	}
+
+	if (iCount > 11)
+	{
+		GetDlgItem(IDC_PROGRESS11)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_STATIC11)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH11)->ShowWindow(SW_SHOW);
+	}
+	else
+	{
+		GetDlgItem(IDC_PROGRESS11)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_STATIC11)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH11)->ShowWindow(SW_HIDE);
+	}
+
+	if (iCount > 12)
+	{
+		GetDlgItem(IDC_PROGRESS12)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_STATIC12)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH12)->ShowWindow(SW_SHOW);
+	}
+	else
+	{
+		GetDlgItem(IDC_PROGRESS12)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_STATIC12)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH12)->ShowWindow(SW_HIDE);
+	}
+
+	if (iCount > 13)
+	{
+		GetDlgItem(IDC_PROGRESS13)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_STATIC13)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH13)->ShowWindow(SW_SHOW);
+	}
+	else
+	{
+		GetDlgItem(IDC_PROGRESS13)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_STATIC13)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH13)->ShowWindow(SW_HIDE);
+	}
+
+	if (iCount > 14)
+	{
+		GetDlgItem(IDC_PROGRESS14)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_STATIC14)->ShowWindow(SW_SHOW);
+		GetDlgItem(IDC_SPATH14)->ShowWindow(SW_SHOW);
+	}
+	else
+	{
+		GetDlgItem(IDC_PROGRESS14)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_STATIC14)->ShowWindow(SW_HIDE);
+		GetDlgItem(IDC_SPATH14)->ShowWindow(SW_HIDE);
 	}
 }
 
 void CReplotSpaceManDlg::UpdateFolders()
 {
 	CString csFolderPath, csStatus;
-	int iPos=0;
-	double dFreeSpace = 0, dTotalSpace = 0;
+	int iPos=0, iOldPlotCount=0;
+	double dFreeSpace = 0.00, dTotalSpace = 0.00, dTotalOldPlotsSize = 0.00;
 	BOOL bWorking=FALSE;
 	BOOL bSpaceCanBeMade = FALSE;
+	CFileFind finder;
+	CFile cFile;
+	CFileStatus cFileStatus;
 
 	for (int iCount = 0; iCount < cOldPlotLocationsList.GetCount(); iCount++)
 	{
@@ -396,27 +484,28 @@ void CReplotSpaceManDlg::UpdateFolders()
 		ULARGE_INTEGER lTotalDiskSpace, lFreeDiskSpace, lFreeDiskSpaceAvailable;
 		GetDiskFreeSpaceExW(csFolderPath, &lFreeDiskSpaceAvailable, &lTotalDiskSpace, &lFreeDiskSpace);
 
-		dFreeSpace = (double) lFreeDiskSpace.QuadPart/1000000000;
-		dTotalSpace = (double) lTotalDiskSpace.QuadPart/ 1000000000;
+		dFreeSpace = (double) lFreeDiskSpace.QuadPart/1073741824;
+		dTotalSpace = (double) lTotalDiskSpace.QuadPart/1073741824;
 
 		if ( dFreeSpace < m_iNewPlotSize )
 			csStatus.Format(_T("%0.2lf GB free. No old plots left to cull, you can remove this drive (%s) from the list"), dFreeSpace, cOldPlotLocationsList.GetItemText(iCount));
 		else
 			csStatus.Format(_T("%0.2lf GB free. No old plots left to cull. Next time, just leave it to me, OK???"), dFreeSpace);
 
-		iPos = 1000 - ((dFreeSpace / dTotalSpace) * 1000);
+		iPos = (int) (1000 - ((dFreeSpace / dTotalSpace) * 1000));
 
 		//Check to see if we have any plots to delete
-		CFileFind finder;
-		
 		if (!finder.FindFile(csFolderPath + _T("*")))
 		{
 			csStatus.Format(_T("Entry %d: '%s' is not a valid path"), iCount + 1, cOldPlotLocationsList.GetItemText(iCount));
 			iPos = 0;
 		}
-		
-		bWorking = finder.FindFile(csFolderPath+_T("*.plot"));
+
 		bSpaceCanBeMade = FALSE;
+		dTotalOldPlotsSize = 0.00;
+		iOldPlotCount = 0;
+		bWorking = finder.FindFile(csFolderPath+_T("*.plot"));
+
 		while (bWorking)
 		{
 			bWorking = finder.FindNextFile();
@@ -427,79 +516,132 @@ void CReplotSpaceManDlg::UpdateFolders()
 				if (dFreeSpace < m_iNewPlotSize)
 				{
 					_tunlink(finder.GetFilePath());
-
+					
 					GetDiskFreeSpaceExW(csFolderPath, NULL, &lTotalDiskSpace, &lFreeDiskSpace);
-					dFreeSpace = (double)lFreeDiskSpace.QuadPart / 1000000000;
-					dTotalSpace = (double)lTotalDiskSpace.QuadPart / 1000000000;
+					dFreeSpace = (double)lFreeDiskSpace.QuadPart / 1073741824;
+					dTotalSpace = (double)lTotalDiskSpace.QuadPart / 1073741824;
 
-					iPos = (dFreeSpace / dTotalSpace) * 1000;
+					iPos = (int) (dFreeSpace / dTotalSpace) * 1000;
 
 					csStatus.Format(_T("%0.2lf GB free. I made space :)"), dFreeSpace);
 				}
 				else
-					csStatus.Format(_T("%0.2lf GB free. I can free some space, when needed"), dFreeSpace);
+				{
+					iOldPlotCount++;
+					cFile.GetStatus(finder.GetFilePath(), cFileStatus);
+					dTotalOldPlotsSize += cFileStatus.m_size;
+					bSpaceCanBeMade = TRUE;
+				}
 			}
 		}
+
+		if (bSpaceCanBeMade)
+			csStatus.Format(_T("%0.1lf GB free. I can delete up to %d old plots and %0.1lf GB space, when needed"), dFreeSpace, iOldPlotCount, dTotalOldPlotsSize / 1073741824);
 
 		if (iCount == 0)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS0))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS0))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC0, csStatus);
+			SetDlgItemText(IDC_SPATH0, csFolderPath);
 		}
 		else if (iCount == 1)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS1))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS1))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC1, csStatus);
+			SetDlgItemText(IDC_SPATH1, csFolderPath);
 		}
 		else if (iCount == 2)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS2))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS2))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC2, csStatus);
+			SetDlgItemText(IDC_SPATH2, csFolderPath);
 		}
 		else if (iCount == 3)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS3))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS3))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC3, csStatus);
+			SetDlgItemText(IDC_SPATH3, csFolderPath);
 		}
 		else if (iCount == 4)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS4))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS4))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC4, csStatus);
+			SetDlgItemText(IDC_SPATH4, csFolderPath);
 		}
 		else if (iCount == 5)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS5))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS5))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC5, csStatus);
+			SetDlgItemText(IDC_SPATH5, csFolderPath);
 		}
 		else if (iCount == 6)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS6))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS6))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC6, csStatus);
+			SetDlgItemText(IDC_SPATH6, csFolderPath);
 		}
 		else if (iCount == 7)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS7))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS7))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC7, csStatus);
+			SetDlgItemText(IDC_SPATH7, csFolderPath);
 		}
 		else if (iCount == 8)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS8))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS8))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC8, csStatus);
+			SetDlgItemText(IDC_SPATH8, csFolderPath);
 		}
 		else if (iCount == 9)
 		{
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS9))->SetRange(0, 1000);
 			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS9))->SetPos(iPos);
 			SetDlgItemText(IDC_STATIC9, csStatus);
+			SetDlgItemText(IDC_SPATH9, csFolderPath);
+		}
+		else if (iCount == 10)
+		{
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS10))->SetRange(0, 1000);
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS10))->SetPos(iPos);
+			SetDlgItemText(IDC_STATIC10, csStatus);
+			SetDlgItemText(IDC_SPATH10, csFolderPath);
+		}
+		else if (iCount == 11)
+		{
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS11))->SetRange(0, 1000);
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS11))->SetPos(iPos);
+			SetDlgItemText(IDC_STATIC11, csStatus);
+			SetDlgItemText(IDC_SPATH11, csFolderPath);
+		}
+		else if (iCount == 12)
+		{
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS12))->SetRange(0, 1000);
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS12))->SetPos(iPos);
+			SetDlgItemText(IDC_STATIC12, csStatus);
+			SetDlgItemText(IDC_SPATH12, csFolderPath);
+		}
+		else if (iCount == 13)
+		{
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS13))->SetRange(0, 1000);
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS13))->SetPos(iPos);
+			SetDlgItemText(IDC_STATIC13, csStatus);
+			SetDlgItemText(IDC_SPATH13, csFolderPath);
+		}
+		else if (iCount == 14)
+		{
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS14))->SetRange(0, 1000);
+			((CProgressCtrl*)GetDlgItem(IDC_PROGRESS14))->SetPos(iPos);
+			SetDlgItemText(IDC_STATIC14, csStatus);
+			SetDlgItemText(IDC_SPATH14, csFolderPath);
 		}
 	}
 }
